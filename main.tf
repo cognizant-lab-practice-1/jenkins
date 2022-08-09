@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "<your bucket here>"
+    bucket         = "cog-lab"
     key            = "<your statefile here>"
     region         = "us-east-1"
   }
