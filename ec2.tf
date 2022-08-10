@@ -25,7 +25,7 @@ resource "aws_instance" "jenkins" {
     type         = "ssh"
     host         = self.public_ip
     user         = "ec2-user"
-    private_key  = file("cognizant-lab-practice.pem" ) # <your keypair name here>
+    private_key  = file("~/.keys/ssh/cognizant-lab-practice.pem" ) # <your keypair name here>
    }
   tags  = {
     "Name"      = "Jenkins"
