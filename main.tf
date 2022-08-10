@@ -1,12 +1,12 @@
 provider "aws" {
-  region  = "us-east-1"
+  region  = "us-west-1"
 }
 
 terraform {
   backend "s3" {
     bucket         = "cog-lab"
-    key            = "<your statefile here>"
-    region         = "us-east-1"
+    key            = "jenkins/terraform.tfstate"
+    region         = "us-west-1"
   }
 }
 
